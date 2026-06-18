@@ -1,0 +1,5 @@
+*
+!.gitignore
+!gerbers.zip
+!bom.csv
+!pos.csv

@@ -1,0 +1,10 @@
+default: fab
+
+fab:
+    kikit fab \
+        jlcpcb \
+        --no-drc \
+        --assembly \
+        --schematic ./hexpansion.kicad_sch \
+        ./hexpansion.kicad_pcb \
+        ./fab

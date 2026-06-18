@@ -2,5 +2,5 @@
 	(version 7)
 	(lib (name "tildagon") (type "KiCad") (uri "${KIPRJMOD}/lib/tildagon.kicad_sym") (options "") (descr ""))
 	(lib (name "hexpansion") (type "KiCad") (uri "${KIPRJMOD}/lib/hexpansion.kicad_sym") (options "") (descr ""))
-	(lib (name "MSD-4-A") (type "KiCad") (uri "${KIPRJMOD}/lib/MSD-4-A.kicad_sym") (options "") (descr ""))
+	(lib (name "TF-15X15") (type "KiCad") (uri "${KIPRJMOD}/lib/TF-15X15.kicad_sym") (options "") (descr ""))
 )
