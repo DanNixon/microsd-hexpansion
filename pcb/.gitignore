@@ -31,7 +31,3 @@ fp-info-cache
 *.lck
 
 .history
-
-
-fab/*
-!fab/*.zip

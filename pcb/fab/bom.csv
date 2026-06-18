@@ -1,0 +1,8 @@
+Comment,Designator,Footprint,LCSC
+0.1uF,"C2,C4",Capacitor_SMD:C_0805_2012Metric,C1711
+47k,"R3,R4,R5,R6,R7,R8,R9",Resistor_SMD:R_0805_2012Metric,C17713
+10uF,"C1,C3",Capacitor_SMD:C_0805_2012Metric,C1713
+MountingHole_Pad,"H1,H2",MountingHole:MountingHole_2.2mm_M2_Pad_Via,
+TF-15X15,"J2,J3",TF-15X15:TF15X15,C111196
+ZD24C64A,U1,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,C2875852
+4k7,"R1,R2",Resistor_SMD:R_0805_2012Metric,C17673

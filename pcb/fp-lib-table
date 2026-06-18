@@ -1,5 +1,5 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "tildagon") (type "KiCad") (uri "${KIPRJMOD}/lib/tildagon.pretty") (options "") (descr ""))
-	(lib (name "MSD-4-A") (type "KiCad") (uri "${KIPRJMOD}/lib/MSD-4-A.pretty") (options "") (descr ""))
+	(lib (name "TF-15X15") (type "KiCad") (uri "${KIPRJMOD}/lib/TF-15X15.pretty") (options "") (descr ""))
 )
