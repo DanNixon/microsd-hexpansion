@@ -1,0 +1,47 @@
+---
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+
+jobs:
+  formatting:
+    name: Formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: DeterminateSystems/nix-installer-action@v22
+
+      - name: Formatting
+        run: nix develop --command treefmt --fail-on-change
+
+  demo-firmware:
+    name: Demo Firmware
+    needs:
+      - formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: DeterminateSystems/nix-installer-action@v22
+
+      - name: Install toolchain
+        run: nix develop --command espup install
+
+      - name: Clippy
+        run: |
+          source "$HOME/export-esp.sh"
+          cd ./demo-firmware
+          nix develop --command cargo clippy --release -- -D warnings
+
+      - name: Build
+        run: |
+          source "$HOME/export-esp.sh"
+          cd ./demo-firmware
+          nix develop --command cargo build --release

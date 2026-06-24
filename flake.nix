@@ -7,9 +7,27 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
+        # Toolchain
+        rustup
+        espup
+
+        # Upload/debug tool
+        probe-rs-tools
+
+        # Code formatting tools
+        treefmt
+        alejandra
+        mdl
+        rustfmt
+        typos
+
+        # Release tools
         just
         kikit
       ];
+
+      DBX_CONTAINER_IMAGE = "ubuntu:26.04";
+      DBX_CONTAINER_NAME = "microsd-hexpansion-build-environment";
     };
   };
 }
